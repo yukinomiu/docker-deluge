@@ -22,6 +22,6 @@ RUN mkdir -p /log && chmod -R 777 /log && \
     mkdir -p /config && chmod -R 777 /config && \
     mkdir -p /downloads && chmod -R 777 /downloads
 
-EXPOSE 8080 20000/udp
+EXPOSE 8080 20000 20000/udp
 
 ENTRYPOINT ["sh", "/run.sh"]
