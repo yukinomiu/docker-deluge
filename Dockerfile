@@ -18,6 +18,6 @@ ENV UMASK=022 \
 COPY GeoIP.dat /usr/share/GeoIP/GeoIP.dat
 COPY run.sh /run.sh
 
-EXPOSE 8080 20000
+EXPOSE 8080 20000/udp
 
 ENTRYPOINT ["sh", "/run.sh"]
