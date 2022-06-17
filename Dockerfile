@@ -7,7 +7,7 @@ RUN apk add --no-cache --virtual .build-deps \
     libffi-dev
 
 RUN pip install --no-cache-dir \
-    libtorrent==2.0.6 && \
+    libtorrent==2.0.6 \
     deluge==2.0.5
 
 RUN apk del .build-deps && rm -rf /tmp
